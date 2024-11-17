@@ -1,0 +1,176 @@
+/* 基本樣式 */
+body {
+    background-color: #eeede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    width: 900px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* 左側面板 */
+.left-panel {
+    width: 330px;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-panel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.text-content h2 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+.text-content p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.nccu-icon {
+    width: 80px;
+    margin-top: 20px;
+}
+
+/* 右側面板 */
+.right-panel {
+    width: 570px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 教育區樣式 */
+.education {
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 每個條目之間的間距 */
+    margin-left: 0; /* 與 Education 標題對齊 */
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column; /* 將年份與描述垂直排列 */
+    align-items: flex-start; /* 確保整體與 Education 左對齊 */
+    gap: 5px; /* 年份與描述之間的間距 */
+    margin-left: 0; /* 去除內部偏移，與標題保持一致 */
+}
+
+.timeline-item .year {
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* 確保年份文字左對齊 */
+    width: 100%; /* 年份占整行，確保與描述保持統一 */
+}
+
+.timeline-item .description {
+    color: #000;
+    font-size: 0.9em;
+    line-height: 1.5; /* 調整行高，確保描述易讀 */
+    margin-left: 0; /* 確保描述部分與年份、標題一致對齊 */
+    width: 100%; /* 確保描述文字占整行 */
+}
+
+/* 標題樣式（帶分隔線） */
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: left;
+    border-bottom: 2px solid #ccc; /* 添加底部分隔線 */
+    padding-bottom: 5px;
+}
+
+/* 功課列表 */
+.homework-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.homework-list li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.homework-list li a:hover {
+    text-decoration: underline;
+}
+
+/* 最愛音樂樣式 */
+.favorite-music h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.music-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* 控制項目間的間距 */
+}
+
+.music-item {
+    display: flex;
+    flex-direction: column; /* 垂直排列圖標和文字 */
+    align-items: center; /* 居中對齊 */
+    text-align: center; /* 文字居中 */
+}
+
+.music-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover; /* 保持圖片比例 */
+    border-radius: 50%; /* 圓形圖片 */
+    transition: transform 0.2s; /* 添加懸停效果 */
+}
+
+.music-item img:hover {
+    transform: scale(1.1); /* 懸停時放大效果 */
+}
+
+.music-item p {
+    margin-top: 8px; /* 圖標與文字間距 */
+    font-size: 0.9em;
+    color: #333;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #555;
+    text-align: center;
+}
